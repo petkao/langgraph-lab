@@ -1,0 +1,22 @@
+[project]
+name = "langgraph-lab"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Peter Kao",email = "petkao@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "langgraph (>=1.2.11,<2.0.0)",
+    "langchain-openai (>=1.6.2,<2.0.0)",
+    "python-dotenv (>=1.2.3,<2.0.0)",
+    "fastapi (>=0.141.1,<0.142.0)",
+    "uvicorn (>=0.53.0,<0.54.0)",
+    "langgraph-checkpoint-postgres (>=3.1.2,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
