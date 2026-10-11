@@ -1,5 +1,20 @@
+# Environment variables and secrets
 .env
-.DS_Store
+.env.*
+!.env.example
+
+# SQLite databases and temporary files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Python generated files
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
 .venv/
+
+# macOS
+.DS_Store
