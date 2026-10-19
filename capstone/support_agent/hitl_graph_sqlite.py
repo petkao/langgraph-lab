@@ -13,11 +13,20 @@ class AgentState(TypedDict):
     status: str
 
 
+import time
+
 def request_approval(state: AgentState):
+    print(f"START processing: {state['request']}")
+
+    time.sleep(2)
+
+    print(f"FINISH processing: {state['request']}")
+
     decision = interrupt({
         "question": "Do you approve this replacement?",
         "request": state["request"]
     })
+
     return {"approved": decision == "yes"}
 
 

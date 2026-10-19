@@ -16,7 +16,13 @@ dependencies = [
     "langgraph-checkpoint-postgres (>=3.1.2,<4.0.0)",
     "grandalf (>=0.8,<0.9)",
     "langgraph-checkpoint-sqlite (>=3.1.1,<4.0.0)",
-    "streamlit (>=1.65.0,<2.0.0)"
+    "streamlit (>=1.65.0,<2.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "opentelemetry-api (>=1.45.1,<2.0.0)",
+    "opentelemetry-sdk (>=1.45.1,<2.0.0)",
+    "prometheus-client (>=0.26.0,<0.27.0)",
+    "mcp (>=1.24.0,<2.0.0)",
+    "langchain-mcp-adapters (==0.3.2)"
 ]
 
 
